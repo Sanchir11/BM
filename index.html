@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Биеийн жингийн индексийг тооцоолох машин</title>
+        <meta name="viewport" content="width=device=width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">  
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="text-center">Биеийн жингийн индексээ шалгана уу!</h2>
+
+            <p id="introText" class="text-center">Биеийн жингийн индексийн үр дүнг шалгахын тулд жин, өндрийг доор оруулна уу</p>
+
+            <form>
+            <p id="weightInput">
+                <p>Жингээ энд оруулаарай (KG)</p>
+                <input id="weight" type="number" pattern="[0-9]*" name="a" />
+            </p>
+            <div id="heightInput">
+                <p>Энд таны өндөр (CM)</p>
+                <input id="height" type="number" pattern="[0-9]" name="b" />
+            </div>
+            <button type="button" class="btn" onclick="calculate()">Тооцоологч BMI</button>
+        </form>
+        <div id="results" class="text-center">Таны биеийн жингийн индексийн үр дүн энд харагдах болно</div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
